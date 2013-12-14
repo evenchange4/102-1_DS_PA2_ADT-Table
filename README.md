@@ -1,3 +1,11 @@
+## Getting Start
+```
+$ g++ main.cpp Table.cpp -o run
+$ ./run "movie1.dat"
+```
+
+## Data
+
 ## Reference
 - [(筆記) 如何使用strtok()? (C/C++) (C)](http://www.cnblogs.com/oomusou/archive/2009/05/10/c_strtok.html)
 - [Cpp - ifstream (read file) - 開檔 & 讀檔](http://www.cnblogs.com/oomusou/archive/2009/05/10/c_strtok.html)

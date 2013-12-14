@@ -8,9 +8,9 @@
 
 using namespace std;
 
-int main(){        
+int main(int argc, char *argv[]){        
     // ################### file IO ###################
-    ifstream fin("u.item", ifstream::in );
+    ifstream fin(argv[1], ifstream::in );
 
     // ################### file parse ###################
 	char *movie_id;
@@ -39,8 +39,8 @@ int main(){
 	int act;
 
 	while(1){
-		cout <<"\n Actions: 1. Movie Insert 2. Movie Remove 3. Movie Retrieve 4. Movie Traverse 5. Exit \n" << endl;  
-		cout << " Enter your action: "<< endl;         
+		cout <<"\n >>>> Actions: 1. Movie Insert 2. Movie Remove 3. Movie Retrieve 4. Movie Traverse 5. Exit \n" << endl;  
+		cout << " >>>>>>>>> Enter your action: "<< endl;         
 		cin >> act; 
 		switch(act){ 
 			case 1: 

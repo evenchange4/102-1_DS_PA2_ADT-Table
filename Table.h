@@ -11,8 +11,7 @@ using namespace std;
 
 const int MAX_LIST = 100;
 
-class Table
-{
+class Table{
 public:
    Table();
    void tableInsert(char* k, char* v1,  char* v2,  char* v3);  
