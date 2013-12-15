@@ -19,6 +19,6 @@ public:
    void tableDelete(char* k);
    void tableRetrieve(char* k);
 private:
-	map<int, std::list<string> > mapMovie;
+	map<string, std::list<string> > mapMovie;
 
 };

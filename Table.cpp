@@ -9,13 +9,13 @@ Table::Table()
 
 void Table::tableInsert(char* k, char* v1,  char* v2,  char* v3)
 {
-    std::stringstream ss(k);
-    int i;
-    ss >> i;
+    // std::stringstream ss(k);
+    // int i;
+    // ss >> i;
 
-    mapMovie[i].push_back(v1);  
-    mapMovie[i].push_back(v2);  
-    mapMovie[i].push_back(v3);  
+    mapMovie[k].push_back(v1);  
+    mapMovie[k].push_back(v2);  
+    mapMovie[k].push_back(v3);  
 
 }  // end tableInsert
 
