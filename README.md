@@ -1,10 +1,19 @@
+# Data Structures Programming Assignment 2
+> implementation of ADT Table by using STL map、list
+
+The Programming Assignment 2 from NTU102-1 DS course
+
+by NTU Michael Hsu
+
+
 ## Getting Start
 ```
 $ g++ main.cpp Table.cpp -o run
 $ ./run "movie1.dat"
 ```
 
-## Data
+## more information
+https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/blob/master/Programming%20Assignment%202.md
 
 ## Reference
 - [(筆記) 如何使用strtok()? (C/C++) (C)](http://www.cnblogs.com/oomusou/archive/2009/05/10/c_strtok.html)
