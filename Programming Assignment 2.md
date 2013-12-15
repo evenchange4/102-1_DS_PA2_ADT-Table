@@ -10,12 +10,25 @@
 4. `traverseTable()`：列出所有電影。
 
 ## 零、準備工作
-### a. dataset 下載
+### a. dataset 
+- 檔案來自 movielen 上面的資料。
+- 檔案結構如下：
+
+```
+c4ca4238a0b9|Toy Story (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Toy%20Story%20(1995)|0|0|0|1|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+c81e728d9d4c|GoldenEye (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?GoldenEye%20(1995)|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0
+eccbc87e4b5c|Four Rooms (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Four%20Rooms%20(1995)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0
+```
+
 - `movie1.dat` (277.88 KB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjV3lKTTRyU1pfLW8/edit?usp=sharing) 
 - `movie100.dat` (27.14 MB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjUEEzYXdpcm9QRGc/edit?usp=sharing)
 - `movie1000.dat` (271.37 MB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjVnI2cGYtVzh6QWc/edit?usp=sharing)
-- `movie5000.dat` () [下載]()
-- 分流 [ntuspace]()
+- `movie5000.dat` (1.33 GB) [下載](https://drive.google.com/file/d/- 0B41WBNgHd5hjM3pQellDWm9GcWc/edit?usp=sharing)
+- 打包 [下載](https://drive.google.com/folderview?id=0B41WBNgHd5hjZF9YS0cwMms3VXM&usp=sharing)
+- 分流 [ntuspace](https://www.space.ntu.edu.tw/navigate/s/768D9E47E9F149859F0CE47FA13DA878QQY)
+
+### b. main.cpp
+- [下載](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/main.cpp)
 
 ## 一、程式編譯執行
 

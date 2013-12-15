@@ -49,11 +49,11 @@ int main(int argc, char *argv[]){
 				cout <<"Enter an movie id: ";
 				getchar();getline(cin, movie_id);
 				cout <<"Enter an movie title: ";
-				getchar();getline(cin, movie_title);
+				getline(cin, movie_title);
 				cout <<"Enter an release date: ";
-				getchar();getline(cin, release_date);
+				getline(cin, release_date);
 				cout <<"Enter an IMDb URL: ";
-				getchar();getline(cin, IMDb_URL);		
+				getline(cin, IMDb_URL);		
 				t.tableInsert(movie_id, movie_title, release_date, IMDb_URL);
 				cout << endl << endl << setw(45) << "INSERTING A MOVIE..." << endl << endl;
                 break; 
