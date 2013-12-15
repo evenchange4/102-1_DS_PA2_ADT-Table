@@ -33,9 +33,15 @@ $ ./run data/movie100.dat
 
 ### c. tableDelete function:
 - 刪除 movie id 為 `fffffe98d0963d27015c198262d97221` 的電影，
-    ![]()
+    ![remove 1](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/remove1.png)
 - 再次刪除
-    ![]()    
+    ![remove 2](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/remove2.png)    
+
+### d. tableRetrieve function:
+與 c. tableDelete function 大同小異。
+
+### e. traverseTable function:
+列出所有的電影。
 
 ## 作業規定
 1. 繳交時間: 2013／12／16（一） 下午 15:00
