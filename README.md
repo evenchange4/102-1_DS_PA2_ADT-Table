@@ -17,3 +17,6 @@ $ ./run "movie1.dat"
 - [ADT List implement sample code](https://github.com/evenchange4/102-1_DS_TA_Sample-code/tree/master/ADT%20List%20code)
 - [LinuxTutorialC++STL LIST](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++STL.html)
 - [iterating over c++ map<int, list<int>>](http://stackoverflow.com/questions/10720359/iterating-over-c-mapint-listint)
+- [How to find if a given key exists in a C++ std::map](http://stackoverflow.com/questions/1939953/how-to-find-if-a-given-key-exists-in-a-c-stdmap)
+- [function <string> std::getline (string)](http://www.cplusplus.com/reference/string/string/getline/)
+- [cin、cin.get()、cin.getline()、getline()、gets()等函數的用法](http://lipingke.blog.hexun.com.tw/36861752_d.html)

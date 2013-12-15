@@ -9,16 +9,14 @@
 
 using namespace std;
 
-const int MAX_LIST = 100;
-
-class Table{
+class Table
+{
 public:
    Table();
-   void tableInsert(char* k, char* v1,  char* v2,  char* v3);  
+   void tableInsert(string k, string v1,  string v2,  string v3);  
    void traverseTable();
-   void tableDelete(char* k);
-   void tableRetrieve(char* k);
+   void tableDelete(string k);
+   void tableRetrieve(string k);
 private:
 	map<string, std::list<string> > mapMovie;
-
 };

@@ -1,27 +1,22 @@
-#include "Table.h"  // header file
 #include <sstream>
 #include <list>
 #include <map>
+#include "Table.h"  // header file
 
 Table::Table()
 {
-}  // end default constructor
+}
 
-void Table::tableInsert(char* k, char* v1,  char* v2,  char* v3)
+void Table::tableInsert(string k, string v1,  string v2,  string v3)
 {
-    // std::stringstream ss(k);
-    // int i;
-    // ss >> i;
-
     mapMovie[k].push_back(v1);  
     mapMovie[k].push_back(v2);  
     mapMovie[k].push_back(v3);  
-
-}  // end tableInsert
+}
 
 void Table::traverseTable()
 {
-    map<int, list<string> >::iterator it; 
+    map<string, list<string> >::iterator it; 
     list<string>::iterator ii;
 
     for(it=mapMovie.begin(); it!=mapMovie.end(); ++it){ 
@@ -34,22 +29,22 @@ void Table::traverseTable()
     }
 }
 
-void Table::tableDelete(char* k){
-    std::stringstream ss(k);
-    int i;
-    ss >> i;
-    mapMovie.erase(i);  
+void Table::tableDelete(string k){
+    mapMovie.erase(k);  
 }
 
-void Table::tableRetrieve(char* k){
-    std::stringstream ss(k);
-    int i;
-    ss >> i;
-
-    map<int, list<string> >::iterator it; 
+void Table::tableRetrieve(string k){
+    map<string, list<string> >::iterator it; 
     list<string>::iterator ii;
-    it = mapMovie.find(i);
-    for(ii = (*it).second.begin(); ii!=(*it).second.end(); ++ii){
-        cout<<(*ii)<<", ";
+    it = mapMovie.find(k);
+
+    if ( it == mapMovie.end() ) {
+        cout << "not found \n";
+    } else {
+        for(ii = (*it).second.begin(); ii!=(*it).second.end(); ++ii){
+            cout<<(*ii)<<" ,";
+        }
     }
+
+
 }

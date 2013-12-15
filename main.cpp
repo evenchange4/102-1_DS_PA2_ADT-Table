@@ -1,10 +1,11 @@
-#include "Table.h"  // header file
 #include <iostream>
 #include <cstdlib>
-#include <fstream>  // for file I/O 
+#include <fstream>
 #include <stdio.h>
-#include <string.h>
 #include <sstream>
+#include <string>
+#include <iomanip>
+#include "Table.h"  // header file
 
 using namespace std;
 
@@ -13,16 +14,11 @@ int main(int argc, char *argv[]){
     ifstream fin(argv[1], ifstream::in );
 
     // ################### file parse ###################
-	char *movie_id;
-	char *movie_title;
-	char *release_date;
-	char *IMDb_URL;
-	char *genres;
-	char m;
+	string movie_id, movie_title, release_date, IMDb_URL, genres;
     string line;
 	char str[20];
-	Table t;
     // ################### init insert ###################
+	Table t;
 	while(getline(fin, line)){
 		strcpy(str, line.c_str());
 
@@ -39,29 +35,38 @@ int main(int argc, char *argv[]){
 	int act;
 
 	while(1){
-		cout <<"\n >>>> Actions: 1. Movie Insert 2. Movie Remove 3. Movie Retrieve 4. Movie Traverse 5. Exit \n" << endl;  
-		cout << " >>>>>>>>> Enter your action: "<< endl;         
+   		cout << endl << endl << setw(45) << "MAIN MENU" << endl << endl;
+		cout << setw(20) << "1. " << "Movie Insert" << endl;
+		cout << setw(20) << "2. " << "Movie Remove" << endl;
+		cout << setw(20) << "3. " << "Movie Retrieve" << endl;
+		cout << setw(20) << "4. " << "Movie Traverse" << endl;
+		cout << setw(20) << "5. " << "Exit" << endl;
+		cout << endl << "Enter the NUMBER of your choice: ";
+
 		cin >> act; 
 		switch(act){ 
 			case 1: 
 				cout <<"Enter an movie id: ";
-				cin >> movie_id;
+				getchar();getline(cin, movie_id);
 				cout <<"Enter an movie title: ";
-				cin >> movie_title;
+				getchar();getline(cin, movie_title);
 				cout <<"Enter an release date: ";
-				cin >> release_date;
+				getchar();getline(cin, release_date);
 				cout <<"Enter an IMDb URL: ";
-				cin >> IMDb_URL;		
+				getchar();getline(cin, IMDb_URL);		
 				t.tableInsert(movie_id, movie_title, release_date, IMDb_URL);
+				cout << endl << endl << setw(45) << "INSERTING A MOVIE..." << endl << endl;
                 break; 
         	case 2: 
 				cout <<"Enter an movie id: ";
-				cin >> movie_id;
+				getchar();getline(cin, movie_id);
 				t.tableDelete(movie_id);
+				cout << endl << endl << setw(45) << "DELETING A MOVIE..." << endl << endl;
                 break;
         	case 3: 
 				cout <<"Enter an movie id: ";
-				cin >> movie_id;
+				getchar();getline(cin, movie_id);
+				cout << endl << endl << setw(45) << "SEARCHING A MOVIE..." << endl << endl;
 				t.tableRetrieve(movie_id);
                 break;
         	case 4: 
@@ -73,6 +78,8 @@ int main(int argc, char *argv[]){
 			    cin.ignore();
 			    cin.get();
 	   			return 0;
+	   		default:
+	   			cout << endl << "Please select a number between 1 and 5: ";
        } 
    }
 
