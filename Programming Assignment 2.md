@@ -23,16 +23,19 @@ $ ./run data/movie100.dat
 
 ### b. tableInsert function:
 
-插入一部上映時間為 `29-Nov-2013` 的新電影 `Carrie (2013)` movie id 為 `42b4ef9b4362221276571fa1841b8b95`，以及 IMDB 的網址為 `http://www.imdb.com/title/tt1939659/`。
+- 插入一部上映時間為 `29-Nov-2013` 的新電影 `Carrie (2013)` movie id 為 `42b4ef9b4362221276571fa1841b8b95`，以及 IMDB 的網址為 `http://www.imdb.com/title/tt1939659/`。
 
-```
+    ![new movie](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/insert%20new%20movie.png)
 
-```
-插入一部上映時間為 `07-Feb-1997` 的已存在電影 `Dante's Peak (1997)` movie id 為 `fffffe98d0963d27015c198262d97221`，以及 IMDB 的網址為 `http://us.imdb.com/M/title-exact?Dante's%20Peak%20(1997)`。
+- 插入一部上映時間為 `07-Feb-1997` 的已存在電影 `Dante's Peak (1997)` movie id 為 `fffffe98d0963d27015c198262d97221`，以及 IMDB 的網址為 `http://us.imdb.com/M/title-exact?Dante's%20Peak%20(1997)`。
 
+    ![old movie](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/insert%20old%20movie.png)
 
-
-
+### c. tableDelete function:
+- 刪除 movie id 為 `fffffe98d0963d27015c198262d97221` 的電影，
+    ![]()
+- 再次刪除
+    ![]()    
 
 ## 作業規定
 1. 繳交時間: 2013／12／16（一） 下午 15:00
