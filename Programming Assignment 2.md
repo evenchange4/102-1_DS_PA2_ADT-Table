@@ -6,9 +6,19 @@
 3. `tableRetrieve(key)`：搜尋一部電影。
 4. `traverseTable()`：列出所有電影。
 
+## 程式執行
+- 編譯執行
+
+    ```
+    $ g++ main.cpp Table.cpp -o run
+    $ ./run data/movie100.dat
+    ```
+    
+    ![執行]()
+
 ## 作業規定
 1. 繳交時間: 2013／12／16（一） 下午 15:00
- 
+
 ## IO 格式：
 1. 無限迴圈鍵入。
 2. 以一個 `space` 爲間格，數量不一定是 6 個 integer。
@@ -31,7 +41,11 @@
     
 ## 繳交檔案要求
 - 能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
-    
+
+
+## 建議方向
+- 整份 Programming Assignment 2 的專案資料夾架構
+    ![架構](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/project%20%E6%9E%B6%E6%A7%8B.png)
 
 ## 評分標準
 1. 批改用的極端測資五組（20 分/組）。
