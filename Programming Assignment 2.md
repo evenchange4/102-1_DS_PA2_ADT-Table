@@ -1,4 +1,6 @@
 # Data Structures Programming Assignment 2
+> 繳交時間: 2013／12／16（一） 下午 15:00
+
 依照提供的 main function （`main.cpp`）以及給定的資料群 `movieX.dat`，完成 ADT Table 的實作，可以是任意 based 的 implementation (DS11)，除了 class 基本的功能外，請並且完成以下 function：
 
 0. class `Table`：class name 為 Table。
@@ -6,6 +8,14 @@
 2. `tableDelete(key)`：刪除一部電影。
 3. `tableRetrieve(key)`：搜尋一部電影。
 4. `traverseTable()`：列出所有電影。
+
+## 零、準備工作
+### a. dataset 下載
+- `movie1.dat` (277.88 KB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjV3lKTTRyU1pfLW8/edit?usp=sharing) 
+- `movie100.dat` (27.14 MB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjUEEzYXdpcm9QRGc/edit?usp=sharing)
+- `movie1000.dat` (271.37 MB) [下載](https://drive.google.com/file/d/0B41WBNgHd5hjVnI2cGYtVzh6QWc/edit?usp=sharing)
+- `movie5000.dat` () [下載]()
+- 分流 [ntuspace]()
 
 ## 一、程式編譯執行
 
@@ -38,47 +48,21 @@ $ ./run data/movie100.dat
     ![remove 2](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/remove2.png)    
 
 ### d. tableRetrieve function:
-與 c. tableDelete function 大同小異。
+ - 與 c. tableDelete function 大同小異。
 
 ### e. traverseTable function:
-列出所有的電影。
-
-## 作業規定
-1. 繳交時間: 2013／12／16（一） 下午 15:00
-
-## IO 格式：
-1. 無限迴圈鍵入。
-2. 以一個 `space` 爲間格，數量不一定是 6 個 integer。
-3. example: 
-    - input:
-         
-    ```
-    > 請鍵入 Arr array:
-    > 6 3 5 9 2 10 
-    ```
-    - 按下 `ENTER 鍵` 後結果:
+- 列出所有的電影。
+    ![list](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/list.png)
     
-    ```
-    > 請鍵入 Arr array:
-    > 6 3 5 9 2 10 
-    > 10 2 9 3 6 5
-    > 請鍵入 Arr array:
-    ```
-    - next input ...
-    
-## 繳交檔案要求
-- 能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
 
+## 三、評分標準
+1. 按照實作的效能評分。
+2. 繳交能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
+3. 請勿抄襲。
 
-## 建議方向
+## 四、建議方向
 - 整份 Programming Assignment 2 的專案資料夾架構
     ![架構](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/project%20%E6%9E%B6%E6%A7%8B.png)
 
-## 評分標準
-1. 批改用的極端測資五組（20 分/組）。
-2. 符合作業規定、IO 格式、繳交要求。
-3. 請勿抄襲。
-
-
-## 其他問題
+## 五、其他問題
 - 本次作業五請聯絡`徐承志`助教 ( `evenchange4@gmail.com` or `r02725013@ntu.edu.tw` )。

@@ -1,1 +1,3 @@
-*.dat
+data/movie100.dat
+data/movie1000.dat
+data/movie5000.dat
