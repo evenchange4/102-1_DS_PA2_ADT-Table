@@ -1,20 +1,38 @@
 # Data Structures Programming Assignment 2
 依照提供的 main function （`main.cpp`）以及給定的資料群 `movieX.dat`，完成 ADT Table 的實作，可以是任意 based 的 implementation (DS11)，除了 class 基本的功能外，請並且完成以下 function：
 
-1. `tableInsert(key, value1,  value2,  value3)`：插入一部新電影。
+0. class `Table`：class name 為 Table。
+1. `tableInsert(key, value1,  value2,  value3)`：插入一部新電影，第一個參數為 `key`，之後的參數依序為 `movie id`、`movie title`、`release date`、`IMDb URL`。
 2. `tableDelete(key)`：刪除一部電影。
 3. `tableRetrieve(key)`：搜尋一部電影。
 4. `traverseTable()`：列出所有電影。
 
-## 程式執行
-- 編譯執行
+## 一、程式編譯執行
 
-    ```
-    $ g++ main.cpp Table.cpp -o run
-    $ ./run data/movie100.dat
-    ```
+```
+$ g++ main.cpp Table.cpp -o run
+$ ./run data/movie100.dat
+```
     
-    ![執行]()
+![執行](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/image/%E5%9F%B7%E8%A1%8C.png)
+
+## 二、程式說明
+### a. Main function (`main.cpp`):
+- 已經處理好 file I/O、file parse、並且一開始就將整份文件 insert 入 Table，然後等待使用者操作。
+- 基本上這份檔案不需要經過修改。
+
+### b. tableInsert function:
+
+插入一部上映時間為 `29-Nov-2013` 的新電影 `Carrie (2013)` movie id 為 `42b4ef9b4362221276571fa1841b8b95`，以及 IMDB 的網址為 `http://www.imdb.com/title/tt1939659/`。
+
+```
+
+```
+插入一部上映時間為 `07-Feb-1997` 的已存在電影 `Dante's Peak (1997)` movie id 為 `fffffe98d0963d27015c198262d97221`，以及 IMDB 的網址為 `http://us.imdb.com/M/title-exact?Dante's%20Peak%20(1997)`。
+
+
+
+
 
 ## 作業規定
 1. 繳交時間: 2013／12／16（一） 下午 15:00

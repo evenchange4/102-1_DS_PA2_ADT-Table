@@ -1,6 +1,7 @@
 #include <sstream>
 #include <list>
 #include <map>
+#include <iomanip>
 #include "Table.h"  // header file
 
 Table::Table()
@@ -9,9 +10,20 @@ Table::Table()
 
 void Table::tableInsert(string k, string v1,  string v2,  string v3)
 {
-    mapMovie[k].push_back(v1);  
-    mapMovie[k].push_back(v2);  
-    mapMovie[k].push_back(v3);  
+    map<string, list<string> >::iterator it; 
+    list<string>::iterator ii;
+    it = mapMovie.find(k);
+
+    if ( it == mapMovie.end() ) {
+        mapMovie[k].push_back(v1);  
+        mapMovie[k].push_back(v2);  
+        mapMovie[k].push_back(v3);  
+
+    } else {
+        cout << endl << "This movie is already in the Table: "<< endl;
+    }
+
+
 }
 
 void Table::traverseTable()
