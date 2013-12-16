@@ -83,15 +83,17 @@ $ ./run data/movie100.dat
  - 與 c. tableDelete function 大同小異。
 
 ### e. traverseTable function:
-- 列出所有的電影。
+- 依照 movie id 的順序列出所有的電影。
     ![list](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/list.png)
     
 
 ## 三、評分標準
 1. 資料正確性。（60%）
 2. 按照實作的效能評分。（40%）
+  - 例如：「將 `movie5000.dat` insert 之後， delete 1000 筆，retrieve 1000 筆，traverse 列出剩餘的電影」所需的時間與記憶體使用量。
 3. 繳交能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
-4. 請勿抄襲。
+4. 不能使用 STL 實作，有使用到第三方 library 也請先行詢問助教。
+5. 請勿抄襲。
 
 ## 四、建議方向
 - 整份 Programming Assignment 2 的專案資料夾架構
