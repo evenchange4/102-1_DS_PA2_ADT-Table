@@ -78,4 +78,6 @@ $ ./run data/movie100.dat
     ![架構](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/project%20%E6%9E%B6%E6%A7%8B.png)
 
 ## 五、其他問題
-- 本次 PA2 請聯絡`徐承志`助教 ( `evenchange4@gmail.com` or `r02725013@ntu.edu.tw` )。
+- 聯絡`徐承志`助教 `evenchange4@gmail.com`
+- 聯絡`謝佳吟`助教 `r02725040@ntu.edu.tw`
+- 聯絡`陳昱安`助教 `r02725010@ntu.edu.tw`
