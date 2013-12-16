@@ -46,7 +46,7 @@ eccbc87e4b5c|Four Rooms (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Fou
 - 分流 [ntuspace](https://www.space.ntu.edu.tw/navigate/s/768D9E47E9F149859F0CE47FA13DA878QQY)
 
 ### b. main.cpp
-- [下載](https://raw.github.com/evenchange4/102-1_DS_PA2_ADT-Table/master/main.cpp)
+- [下載](https://gist.github.com/evenchange4/448e2a8299c2e717cdeb/raw/76dbc04bc565c5acce6f353361fc1905ee8261bd/main.cpp)
 
 ## 一、程式編譯執行
 
