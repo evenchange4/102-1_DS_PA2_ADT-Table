@@ -1,13 +1,31 @@
 # Data Structures Programming Assignment 2
-> 繳交時間: 2013／12／16（一） 下午 15:00
+> 繳交時間: 2013／12／30（一） 下午 15:00
 
 依照提供的 main function （`main.cpp`）以及給定的資料群 `movieX.dat`，完成 ADT Table 的實作，可以是任意 based 的 implementation (DS11)，除了 class 基本的功能外，請並且完成以下 function：
 
-0. class `Table`：class name 為 Table。
 1. `tableInsert(key, value1,  value2,  value3)`：插入一部新電影，第一個參數為 `key`，之後的參數依序為 `movie id`、`movie title`、`release date`、`IMDb URL`。
 2. `tableDelete(key)`：刪除一部電影。
 3. `tableRetrieve(key)`：搜尋一部電影。
 4. `traverseTable()`：列出所有電影。
+
+
+- 可以參考以下 class `Table`：class name 為 Table。
+
+```
+class Table
+{
+public:
+   ...
+   void tableInsert(string k, string v1,  string v2,  string v3);  
+   void traverseTable();
+   void tableDelete(string k);
+   void tableRetrieve(string k);
+   ...
+private:
+	...
+};
+```
+
 
 ## 零、準備工作
 ### a. dataset 
@@ -43,6 +61,7 @@ $ ./run data/movie100.dat
 ### a. Main function (`main.cpp`):
 - 已經處理好 file I/O、file parse、並且一開始就將整份文件 insert 入 Table，然後等待使用者操作。
 - 基本上這份檔案不需要經過修改。
+- 如果執行沒有帶任何參數（檔名）則不會讀入檔案，為空的 Table。
 
 ### b. tableInsert function:
 
@@ -69,9 +88,10 @@ $ ./run data/movie100.dat
     
 
 ## 三、評分標準
-1. 按照實作的效能評分。
-2. 繳交能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
-3. 請勿抄襲。
+1. 資料正確性。（60%）
+2. 按照實作的效能評分。（40%）
+3. 繳交能夠編譯且執行的完整 source code。其中可能包括 `.h` 、 `.cpp` 、 `專案檔`。
+4. 請勿抄襲。
 
 ## 四、建議方向
 - 整份 Programming Assignment 2 的專案資料夾架構
