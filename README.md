@@ -30,3 +30,5 @@ https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/blob/master/Programming%20
 - [function <string> std::getline (string)](http://www.cplusplus.com/reference/string/string/getline/)
 - [cin、cin.get()、cin.getline()、getline()、gets()等函數的用法](http://lipingke.blog.hexun.com.tw/36861752_d.html)
 - [MovieLens dataset](http://www.grouplens.org/datasets/movielens/)
+- [分解字串成Token](http://good-ed.blogspot.tw/2009/05/token.html)
+- [https://gist.github.com/evenchange4/448e2a8299c2e717cdeb/](https://gist.github.com/evenchange4/448e2a8299c2e717cdeb/)

@@ -1,5 +1,5 @@
 # Data Structures Programming Assignment 2
-> 繳交時間: 2013／12／30（一） 下午 15:00
+> 繳交時間: 2014／01／21（二） 下午 15:00
 
 依照提供的 main function （`main.cpp`）以及給定的資料群 `movieX.dat`，完成 ADT Table 的實作，可以是任意 based 的 implementation (DS11)，除了 class 基本的功能外，請並且完成以下 function：
 
@@ -46,7 +46,7 @@ eccbc87e4b5c|Four Rooms (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Fou
 - 分流 [ntuspace](https://www.space.ntu.edu.tw/navigate/s/768D9E47E9F149859F0CE47FA13DA878QQY)
 
 ### b. main.cpp
-- [下載](https://gist.github.com/evenchange4/448e2a8299c2e717cdeb/raw/76dbc04bc565c5acce6f353361fc1905ee8261bd/main.cpp)
+- [下載](https://gist.github.com/evenchange4/448e2a8299c2e717cdeb/raw/14aee6e110cf90e0405d758e8387d7380f8a6b0c/main.cpp)
 
 ## 一、程式編譯執行
 
@@ -98,6 +98,22 @@ $ ./run data/movie100.dat
 ## 四、建議方向
 - 整份 Programming Assignment 2 的專案資料夾架構
     ![架構](https://github.com/evenchange4/102-1_DS_PA2_ADT-Table/raw/master/image/project%20%E6%9E%B6%E6%A7%8B.png)
+- 字串的大小比較 `strcmp`：
+
+  ```
+  #include <iostream>
+  #include <cstdlib>
+  #include <sstream>
+  #include <string>
+
+  using namespace std;
+  int main(int argc, char *argv[]){        
+
+    string str1 = "fffffe98d0963d27015c198262d97221";
+    string str2 = "fffffe98d0963d27015c198262d97222";
+    cout <<"strcmp(str1, str2) = " <<strcmp(str1.c_str(), str2.c_str())<<endl;
+  }
+  ```
 
 ## 五、其他問題
 - 聯絡`徐承志`助教 `evenchange4@gmail.com`
